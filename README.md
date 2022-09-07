@@ -5,9 +5,9 @@ Caution: CXRO includes Compton scattering when calculating the absorption length
 
 For example, the following script plots dispersion and absorption of SiO2 for X-ray energies between 0.1-10 KeV:
 
- >>x = 10.^linspace(log10(0.1), log10(10), 1000);           % list of X-ray energies (KeV)
- >>y = refrac('SiO2', x, 2.648);                                         % give chemical formula and mass density to calculate properties of SiO2
- >>loglog(x*1000, y.dispersion, x*1000, y.absorption);    % plot in eV
+x = 10.^linspace(log10(0.1), log10(10), 1000);           % list of X-ray energies (KeV)
+y = refrac('SiO2', x, 2.648);                                         % give chemical formula and mass density to calculate properties of SiO2
+loglog(x*1000, y.dispersion, x*1000, y.absorption);    % plot in eV
 
 ![refrac](http://1.bp.blogspot.com/-7CEbjcKl2gE/VYRCPw2djiI/AAAAAAAAAmQ/KlW_eVTulLo/s1600/sio2.jpg)
 
